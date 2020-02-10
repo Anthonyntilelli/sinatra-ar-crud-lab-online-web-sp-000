@@ -54,6 +54,4 @@ class ApplicationController < Sinatra::Base
     Article.destroy(params[:id])
     redirect "/articles"
   end
-
-
 end
