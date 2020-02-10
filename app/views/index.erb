@@ -6,8 +6,8 @@
   </head>
   <body>
     <ul>
-      <% @articles.each do |article| %>
-      <li><a href="/articles/<%= article.id %>"><%= article.title %></a></li>
+      <% @articles.each do |art| %>
+      <li><a href="/articles/<%= art.id %>"><%= article.title %></a></li>
       <% end %>
     </ul>
   </body>
