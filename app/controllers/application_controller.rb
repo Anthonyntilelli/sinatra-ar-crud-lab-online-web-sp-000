@@ -1,4 +1,3 @@
-
 require_relative '../../config/environment'
 
 class ApplicationController < Sinatra::Base
@@ -9,13 +8,15 @@ class ApplicationController < Sinatra::Base
   end
 
   # Create
-  get '/' do
-  end
+  # end  get '/' do
+
   
   get '/articles/new' do
+    @article = article.new
+    erb :new
   end
   
-  post '/articles' do
-  end
+  # post '/articles' do
+  # end
   
 end
