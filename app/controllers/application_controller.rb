@@ -6,14 +6,14 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
-  get "/articles/new" do
-    @article = Article.new
-    erb :new
-  end
-
   get "/articles" do
     @articles = Article.all
     erb :index
+  end
+
+  get "/articles/new" do
+    @article = Article.new
+    erb :new
   end
 
   get "/articles/:id" do
