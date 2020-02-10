@@ -7,9 +7,7 @@ class ApplicationController < Sinatra::Base
   end
 
   # GETS
-  get '/' do
-    redirect "/articles"
-  end
+
 
   get "/articles/new" do
     @article = Article.new
